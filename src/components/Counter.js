@@ -6,7 +6,7 @@ const Counter = ({max, counter}) => {
 
   const increment = () => {
     setCount(c => {
-      if(c >= max) return;
+      if(c >= max) return c;
     return c + counter;
   })};
   const decrement = () => setCount(count - 1);
